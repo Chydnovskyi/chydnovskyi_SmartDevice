@@ -1,0 +1,141 @@
+.header {
+  max-width: 1460px;
+  position: absolute;
+  display: flex;
+  padding: 33px 25px 0;
+  box-sizing: border-box;
+  width: 100%;
+  align-items: center;
+  top: 43px;
+  left: 50%;
+  transform:translate(-50%, -50%);
+
+  @media (max-width: $tablet-width) {
+    padding-top: 7px;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 33px;
+    padding-left: 17px;
+    padding-right: 16px;
+  }
+}
+
+.header__logo {
+  display: flex;
+  text-align: left;
+}
+
+.header__logo img {
+  @media (max-width: $mobile-width) {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.header__name {
+  padding: 6px 0 0 16px;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.header h2 {
+  font-family: "RobotoCondesed";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  color: $white;
+  margin: 0;
+}
+
+.header p {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #788891;
+  margin: 0;
+}
+
+.header__nav {
+  margin-left: auto;
+}
+
+.header__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header__item {
+  margin-right: 122px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 58px;
+  }
+}
+
+.header__item:last-child {
+  margin-right: 49px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.header__item a {
+  text-decoration: none;
+  color: $white;
+  position: relative;
+}
+
+.header__item span {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__mail::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 19px;
+  height: 14px;
+  background: url("../img/mail-desktop.svg") no-repeat;
+  left: -39px;
+  top: 2px;
+
+  @media (max-width: $tablet-width) {
+    width: 25px;
+    height: 19px;
+    left: -25px;
+    top: -11px;
+    background-size: contain;
+  }
+
+  @media (max-width: $mobile-width) {
+    left: -14px;
+  }
+}
+
+.header__phone::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: url("../img/phone-desktop.svg") no-repeat;
+  left: -34px;
+  top: 0;
+
+  @media (max-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    left: -24px;
+    top: -15px;
+  }
+}

@@ -1,0 +1,174 @@
+.button {
+  font-family: "RobotoCondesed";
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  border-radius: 5px;
+  border: none;
+  background: none;
+}
+
+.button--header {
+  width: 180px;
+  height: 45px;
+  border: 1px solid $white;
+  box-sizing: border-box;
+
+  &:hover {
+    background: $white;
+    color: #1B2D37;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.button--promo {
+  width: 407px;
+  height: 55px;
+  background: $basic;
+  margin-left: 98px;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: $basic-opacity;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 379px;
+    margin-left: 49px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 287px;
+    margin-left: 3px;
+  }
+}
+
+.button--promo .promo__tablet {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.button--promo .promo__mobile {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.button--about {
+  width: 180px;
+  height: 45px;
+  color: $basic;
+  border: 1px solid #00B2FF;
+  box-sizing: border-box;
+
+  &:hover {
+    color: $white;
+    background: $basic;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 3px;
+  }
+}
+
+.button--product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 63px;
+  height: 63px;
+  background-color: $basic;
+  position: absolute;
+  border-radius: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.button--question {
+  grid-row: 4;
+  width: 270px;
+  height: 45px;
+  color: $white;
+  background: none;
+  border: 1px solid $white;
+  box-sizing: border-box;
+
+  &:hover {
+    background: $white;
+    color: $basic;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 280px;
+    height: 47px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    grid-row: 6;
+  }
+}
+
+.button--razdel {
+  text-align: left;
+  font-family: "RobotoCondesed";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1B2D37;
+  margin-left: 3px;
+  padding: 0;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    background: url("../img/Union.svg") no-repeat;
+    background-position: right;
+  }
+}
+
+.button--close {
+  @media (max-width: $mobile-width) {
+    background: url("../img/minus.svg") no-repeat;
+    background-position: right;
+  }
+}
+
+.button--no-js {
+  background: none;
+}
+
+.button--modal {
+  width: 100%;
+  height: 47px;
+  color: $white;
+  background: none;
+  border: 1px solid $white;
+  box-sizing: border-box;
+  margin-bottom: 26px;
+
+  &:hover {
+    background: $white;
+    color: $basic;
+  }
+}
+
+.button--modal-close {
+  position: absolute;
+  top: 19px;
+  right: 14px;
+}
