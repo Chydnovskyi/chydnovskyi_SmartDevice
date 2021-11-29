@@ -30,15 +30,15 @@
 
 .footer__logo h2 {
   margin: 0;
-  font-family: "RobotoCondesed";
+  font-family: "RobotoCondesed", sans-serif;
   font-weight: 700;
   font-size: 25px;
   line-height: 29px;
-  color: #203C42;
+  color: #203c42;
 }
 
 .footer__logo p {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
@@ -62,15 +62,15 @@
   }
 }
 
-.footer__item-social {
+.footer__list-social li {
   margin-right: 15px;
 }
 
-.footer__item-social:last-child {
+.footer__list-social li:last-child {
   margin-right: 0;
 }
 
-.footer__razdel {
+.footer__sections {
   display: flex;
   flex-direction: column;
   margin-left: 14.6%;
@@ -91,7 +91,7 @@
   }
 }
 
-.footer__list-razdel {
+.footer__list-sections {
   height: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -110,16 +110,16 @@
   }
 }
 
-.footer__item-razdel a {
-  font-family: "PT Mono";
+.footer__list-sections a {
+  font-family: "PT Mono", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
-  color: #1B2D37;
+  color: #1b2d37;
   opacity: 0.5;
 }
 
-.footer__item-razdel:nth-child(1n + 1) {
+.footer__list-sections li:nth-child(1n + 1) {
   margin-right: 75px;
 }
 
@@ -149,23 +149,23 @@
   }
 }
 
-.footer__item-office a {
-  font-family: "PT Mono";
+.footer__list-office a {
+  font-family: "PT Mono", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
-  color: #1B2D37;
+  color: #1b2d37;
   opacity: 0.5;
 }
 
 .footer__paragraph {
-  font-family: "PT Mono";
+  font-family: "PT Mono", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #1B2D37;
+  color: #1b2d37;
   opacity: 0.5;
   margin: 0;
 }
@@ -230,7 +230,7 @@
 
   @media (max-width: $mobile-width) {
     padding-top: 28px;
-    padding-left: 0px;
+    padding-left: 0;
     padding-bottom: 26px;
   }
 }
@@ -251,21 +251,21 @@
   }
 }
 
-//razdel
+//sections
 
-.footer__item-razdel--first {
+.footer__list-sections li:nth-child(3) {
   @media (max-width: $tablet-width) {
     grid-row: 2;
   }
 }
 
-.footer__item-razdel--second {
+.footer__list-sections li:nth-child(5) {
   @media (max-width: $tablet-width) {
     grid-row: 3;
   }
 }
 
-.footer__item-razdel--third {
+.footer__list-sections li:last-child {
   @media (max-width: $tablet-width) {
     grid-row: 4;
   }
@@ -273,13 +273,13 @@
 
 //button
 
-.button--no-js .footer__list-razdel--show {
+.button--no-js .footer__list-sections--show {
   @media (max-width: $mobile-width) {
     display: block;
   }
 }
 
-.footer__list-razdel--show {
+.footer__list-sections--show {
   display: grid;
 }
 

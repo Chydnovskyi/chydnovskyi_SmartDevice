@@ -14,11 +14,11 @@
 }
 
 .product h2 {
-  font-family: "RobotoCondesed";
+  font-family: "RobotoCondesed", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
-  color: #FFFFFF;
+  color: $white;
   margin: 0;
 
   @media (max-width: $tablet-width) {
@@ -173,10 +173,10 @@
 }
 
 .product__item p {
-  font-family: "RobotoCondesed";
+  font-family: "RobotoCondesed", sans-serif;
   font-size: 20px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: $white;
 
   @media (max-width: $mobile-width) {
     margin: 0;

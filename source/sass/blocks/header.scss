@@ -8,7 +8,7 @@
   align-items: center;
   top: 43px;
   left: 50%;
-  transform:translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 
   @media (max-width: $tablet-width) {
     padding-top: 7px;
@@ -42,7 +42,7 @@
 }
 
 .header h2 {
-  font-family: "RobotoCondesed";
+  font-family: "RobotoCondesed", sans-serif;
   font-weight: 700;
   font-size: 25px;
   line-height: 29px;
@@ -51,7 +51,7 @@
 }
 
 .header p {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
@@ -70,7 +70,7 @@
   display: flex;
 }
 
-.header__item {
+.header__list li {
   margin-right: 122px;
 
   @media (max-width: $tablet-width) {
@@ -78,7 +78,7 @@
   }
 }
 
-.header__item:last-child {
+.header__list li:last-child {
   margin-right: 49px;
 
   @media (max-width: $tablet-width) {
@@ -86,13 +86,13 @@
   }
 }
 
-.header__item a {
+.header__list li a {
   text-decoration: none;
   color: $white;
   position: relative;
 }
 
-.header__item span {
+.header__list li span {
   @media (max-width: $tablet-width) {
     display: none;
   }

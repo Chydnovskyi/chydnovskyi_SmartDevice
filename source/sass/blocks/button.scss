@@ -1,5 +1,5 @@
 .button {
-  font-family: "RobotoCondesed";
+  font-family: "RobotoCondesed", sans-serif;
   color: $white;
   text-transform: uppercase;
   font-weight: 700;
@@ -19,7 +19,7 @@
 
   &:hover {
     background: $white;
-    color: #1B2D37;
+    color: #1b2d37;
   }
 
   @media (max-width: $tablet-width) {
@@ -71,7 +71,7 @@
   width: 180px;
   height: 45px;
   color: $basic;
-  border: 1px solid #00B2FF;
+  border: 1px solid #00b2ff;
   box-sizing: border-box;
 
   &:hover {
@@ -124,13 +124,13 @@
 
 .button--razdel {
   text-align: left;
-  font-family: "RobotoCondesed";
+  font-family: "RobotoCondesed", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #1B2D37;
+  color: #1b2d37;
   margin-left: 3px;
   padding: 0;
 

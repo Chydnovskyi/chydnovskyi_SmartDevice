@@ -1,6 +1,6 @@
 .promo {
   min-height: 878px;
-  background: #1B2D37 url("../img/promo.png") no-repeat;
+  background: $opacity-black url("../img/promo.png") no-repeat;
   background-size: cover;
   display: flex;
   padding-left: 250px;
@@ -8,7 +8,7 @@
   box-sizing: border-box;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background: #1B2D37 url("../img/promo@2x.png") no-repeat;
+    background: $opacity-black url("../img/promo@2x.png") no-repeat;
     background-size: cover;
   }
 
@@ -16,7 +16,7 @@
     min-height: 686px;
     padding-top: 131px;
     padding-left: 89px;
-    background: #1B2D37 url("../img/promo-tablet.png") no-repeat;
+    background: $opacity-black url("../img/promo-tablet.png") no-repeat;
     background-size: cover;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -28,7 +28,7 @@
   @media (max-width: $mobile-width) {
     min-height: 647px;
     padding: 228px 15px 0;
-    background: #1B2D37 url("../img/promo-mobile.png") no-repeat;
+    background: $opacity-black url("../img/promo-mobile.png") no-repeat;
     background-size: cover;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -71,13 +71,13 @@
 }
 
 .promo__text h2 {
-  font-family: "RobotoCondesed";
+  font-family: "RobotoCondesed", sans-serif;
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: $white;
   margin-top: 58px;
   margin-bottom: 29px;
 
@@ -99,7 +99,7 @@
 
 .promo__text p {
   max-width: 683px;
-  font-family: "PT Mono";
+  font-family: "PT Mono", sans-serif;
   font-size: 22px;
   line-height: 34px;
   color: $white;

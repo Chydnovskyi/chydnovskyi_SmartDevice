@@ -33,7 +33,7 @@
   max-width: 570px;
   min-height: 299px;
   padding: 39px 42px 0 42px;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
   border-left: 3px solid $basic;
   box-sizing: border-box;
   margin-bottom: 30px;
@@ -68,9 +68,6 @@
   padding-top: 43px;
 
   @media (max-width: $tablet-width) {
-    padding-left: 25px;
-    padding-right: 20px;
-    padding-top: 22px;
     padding: 26px 20px 19px 24px;
   }
 
@@ -122,8 +119,8 @@
 }
 
 .about__item h3 {
-  color: #00B2FF;
-  font-family: "RobotoCondesed";
+  color: #00b2ff;
+  font-family: "RobotoCondesed", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
@@ -143,7 +140,7 @@
 
 .about__item p {
   max-width: 482px;
-  font-family: "PT Mono";
+  font-family: "PT Mono", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -228,17 +225,20 @@
   left: -36px;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background: #212121 url("../img/2005@2x.png") no-repeat;
+    background: url("../img/2005@2x.png") no-repeat;
+    background-size: cover;
   }
 
   @media (max-width: $tablet-width) {
     background: url("../img/2005-tablet.png") no-repeat;
+    background-size: cover;
     top: 25px;
-    left: 0px;
+    left: 0;
     height: 360px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: #212121 url("../img/2005-tablet@2x.png") no-repeat;
+      background: url("../img/2005-tablet@2x.png") no-repeat;
+      background-size: cover;
     }
   }
 
@@ -248,7 +248,7 @@
 }
 
 .about__text h2 {
-  font-family: "RobotoCondesed";
+  font-family: "RobotoCondesed", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
@@ -266,7 +266,7 @@
 }
 
 .about__paragraph {
-  font-family: "PT Mono";
+  font-family: "PT Mono", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
