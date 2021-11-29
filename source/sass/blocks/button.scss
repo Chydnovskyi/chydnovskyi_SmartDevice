@@ -98,7 +98,7 @@
 }
 
 .button--question {
-  grid-row: 4;
+  grid-row: 3;
   width: 270px;
   height: 45px;
   color: $white;
@@ -118,11 +118,11 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    grid-row: 6;
+    grid-row: 4;
   }
 }
 
-.button--razdel {
+.button--sections {
   text-align: left;
   font-family: "RobotoCondesed", sans-serif;
   font-weight: 400;

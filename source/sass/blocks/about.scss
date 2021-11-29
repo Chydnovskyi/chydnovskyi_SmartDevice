@@ -190,7 +190,7 @@
   }
 }
 
-.about__item:nth-child(2n + 1) {
+.about__list li:nth-child(2n + 1) {
   margin-right: 30px;
 
   @media (max-width: $mobile-width) {
