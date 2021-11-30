@@ -127,10 +127,13 @@
   }
 }
 
+.question__input--phone {
+  margin-left: auto;
+}
+
 .question__input--phone input {
   grid-row: 1;
   grid-column: 2;
-  margin-left: auto;
 
   @media (max-width: $tablet-width) {
     padding-left: 20px;

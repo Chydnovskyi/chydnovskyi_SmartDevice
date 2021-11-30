@@ -52,6 +52,7 @@
 
 .product__list li {
   margin-right: 30px;
+  width: 100%;
 
   @media (max-width: $tablet-width) {
     margin-right: 0;
@@ -64,7 +65,6 @@
 }
 
 .product__item {
-  width: 370px;
   min-height: 620px;
   padding-top: 30px;
   padding-left: 44px;
