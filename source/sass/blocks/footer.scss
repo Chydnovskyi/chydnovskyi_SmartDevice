@@ -255,13 +255,13 @@
 
 //sections
 
-.footer__list-sections li:nth-child(6n + 3) {
+.footer__list-sections li:nth-child(10n + 3) {
   @media (max-width: $tablet-width) {
     grid-row: 2;
   }
 }
 
-.footer__list-sections li:nth-child(3n + 5) {
+.footer__list-sections li:nth-child(11n + 5) {
   @media (max-width: $tablet-width) {
     grid-row: 3;
   }
