@@ -101,7 +101,9 @@
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
-    height: 175px;
+    min-height: 175px;
+    height: auto;
+    margin-top: 26px;
   }
 
   @media (max-width: $mobile-width) {
@@ -253,7 +255,7 @@
 
 //sections
 
-.footer__list-sections li:nth-child(6n + 2) {
+.footer__list-sections li:nth-child(6n + 3) {
   @media (max-width: $tablet-width) {
     grid-row: 2;
   }

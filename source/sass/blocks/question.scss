@@ -129,6 +129,10 @@
 
 .question__input--phone {
   margin-left: auto;
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+  }
 }
 
 .question__input--phone input {
