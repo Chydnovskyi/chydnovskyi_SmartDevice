@@ -253,19 +253,19 @@
 
 //sections
 
-.footer__list-sections li:nth-child(3) {
+.foooter__item-sections--first {
   @media (max-width: $tablet-width) {
     grid-row: 2;
   }
 }
 
-.footer__list-sections li:nth-child(5) {
+.foooter__item-sections--second {
   @media (max-width: $tablet-width) {
     grid-row: 3;
   }
 }
 
-.footer__list-sections li:last-child {
+.foooter__item-sections--third {
   @media (max-width: $tablet-width) {
     grid-row: 4;
   }
