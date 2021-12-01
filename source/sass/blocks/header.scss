@@ -11,33 +11,31 @@
   transform: translate(-50%, -50%);
 
   @media (max-width: $tablet-width) {
-    padding-top: 7px;
+    padding-top: 5px;
   }
 
   @media (max-width: $mobile-width) {
     top: 33px;
     padding-left: 17px;
     padding-right: 16px;
+    padding-top: 8px;
   }
 }
 
 .header__logo {
   display: flex;
   text-align: left;
-}
-
-.header__logo img {
-  @media (max-width: $mobile-width) {
-    width: 38px;
-    height: 38px;
-  }
-}
-
-.header__name {
-  padding: 6px 0 0 16px;
 
   @media (max-width: $mobile-width) {
     display: none;
+  }
+}
+
+.header__logo--mobile {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
   }
 }
 
@@ -68,13 +66,19 @@
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: $mobile-width) {
+    margin-top: -6px;
+  }
 }
 
 .header__list li {
-  margin-right: 122px;
+  margin-right: 88px;
 
   @media (max-width: $tablet-width) {
-    margin-right: 58px;
+    margin-right: 14px;
   }
 }
 
@@ -90,6 +94,12 @@
   text-decoration: none;
   color: $white;
   position: relative;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: $basic;
+  }
 }
 
 .header__list li span {
@@ -98,44 +108,29 @@
   }
 }
 
-.header__mail::before {
-  content: "";
-  display: block;
-  position: absolute;
+.header__mail svg {
   width: 19px;
   height: 14px;
-  background: url("../img/mail-desktop.svg") no-repeat;
-  left: -39px;
-  top: 2px;
+  margin-right: 20px;
 
   @media (max-width: $tablet-width) {
     width: 25px;
     height: 19px;
-    left: -25px;
-    top: -11px;
-    background-size: contain;
   }
 
   @media (max-width: $mobile-width) {
-    left: -14px;
+    margin-right: 9px;
   }
 }
 
-.header__phone::before {
-  content: "";
-  display: block;
-  position: absolute;
+.header__phone svg {
   width: 18px;
   height: 18px;
-  background: url("../img/phone-desktop.svg") no-repeat;
-  left: -34px;
-  top: 0;
+  margin-right: 17px;
 
   @media (max-width: $tablet-width) {
+    margin-right: 0;
     width: 24px;
     height: 24px;
-    background-size: contain;
-    left: -24px;
-    top: -15px;
   }
 }

@@ -8,6 +8,10 @@ body {
   height: 100%;
 }
 
+.body--modal {
+  overflow: hidden;
+}
+
 .body__wrapper {
   display: flex;
   flex-direction: column;

@@ -5,7 +5,10 @@
   display: flex;
   padding-left: 250px;
   padding-top: 258px;
+  padding-bottom: 90px;
+  padding-right: 177px;
   box-sizing: border-box;
+  overflow: hidden;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background: $opacity-black url("../img/promo@2x.png") no-repeat;
@@ -16,6 +19,7 @@
     min-height: 686px;
     padding-top: 131px;
     padding-left: 89px;
+    padding-right: 0;
     background: $opacity-black url("../img/promo-tablet.png") no-repeat;
     background-size: cover;
 
@@ -39,14 +43,13 @@
 }
 
 .promo__image {
-  margin-left: 73px;
-  position: absolute;
-  right: 177px;
+  margin-left: auto;
   z-index: 0;
 
   @media (max-width: $tablet-width) {
     right: 0;
     top: 113px;
+    position: absolute;
   }
 
   @media (max-width: $mobile-width) {
@@ -68,6 +71,12 @@
 
 .promo__text {
   z-index: 1;
+  min-width: 718px;
+
+  @media (max-width: $tablet-width) {
+    min-width: auto;
+    width: 100%;
+  }
 }
 
 .promo__text h2 {

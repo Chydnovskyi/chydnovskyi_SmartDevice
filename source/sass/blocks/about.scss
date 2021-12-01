@@ -1,5 +1,5 @@
 .about {
-  padding: 112px 0 110px 0;
+  padding: 112px 15px 110px 15px;
 
   @media (max-width: $tablet-width) {
     padding: 54px 0 83px 0;
@@ -24,6 +24,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    max-width: 290px;
     display: flex;
     flex-direction: column;
   }
@@ -45,7 +46,6 @@
     background-color: #00b2ff;
     fill: #ffffff;
     color: $white;
-    cursor: pointer;
   }
 
   @media (max-width: $tablet-width) {

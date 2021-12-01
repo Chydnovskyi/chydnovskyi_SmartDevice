@@ -57,12 +57,16 @@
   box-sizing: border-box;
 }
 
-.modal__form input input::placeholder {
+.modal__form input::placeholder {
   font-family: "PT Mono", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
+}
+
+.modal__form input:focus {
+  border: 1px solid $white;
 }
 
 .modal__form textarea {
@@ -73,6 +77,11 @@
   padding: 13px 24px;
   box-sizing: border-box;
   margin-bottom: 26px;
+  resize: none;
+}
+
+.modal__form:focus {
+  border: 1px solid $white;
 }
 
 .modal__form textarea::placeholder {
@@ -95,6 +104,7 @@
   margin-top: 8px;
   margin-right: 19px;
   position: relative;
+  cursor: pointer;
 }
 
 .modal__checkbox::before {
@@ -132,6 +142,11 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+
+.modal__checkbox-input input:focus + label {
+  border: 1px solid $white;
 }
 
 .modal--show {

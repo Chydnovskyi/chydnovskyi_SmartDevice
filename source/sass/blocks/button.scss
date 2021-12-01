@@ -22,6 +22,11 @@
     color: #1b2d37;
   }
 
+  &:focus {
+    background: $white;
+    color: #1b2d37;
+  }
+
   @media (max-width: $tablet-width) {
     display: none;
   }
@@ -43,13 +48,17 @@
     background: $basic-opacity;
   }
 
+  &:focus {
+    background: $basic-opacity;
+  }
+
   @media (max-width: $tablet-width) {
     width: 379px;
     margin-left: 49px;
   }
 
   @media (max-width: $mobile-width) {
-    width: 287px;
+    width: 100%;
     margin-left: 3px;
   }
 }
@@ -74,6 +83,7 @@
   color: $basic;
   border: 1px solid #00b2ff;
   box-sizing: border-box;
+  cursor: pointer;
 
   &:hover {
     color: $white;
@@ -112,6 +122,11 @@
     color: $basic;
   }
 
+  &:focus {
+    background: $white;
+    color: $basic;
+  }
+
   @media (max-width: $tablet-width) {
     width: 280px;
     height: 47px;
@@ -134,11 +149,14 @@
   color: #1b2d37;
   margin-left: 3px;
   padding: 0;
+  display: none;
 
   @media (max-width: $mobile-width) {
+    display: block;
     width: 100%;
     background: url("../img/Union.svg") no-repeat;
     background-position: right;
+    min-height: 72px;
   }
 }
 
@@ -163,6 +181,11 @@
   margin-bottom: 26px;
 
   &:hover {
+    background: $white;
+    color: $basic;
+  }
+
+  &:focus {
     background: $white;
     color: $basic;
   }

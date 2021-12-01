@@ -21,6 +21,7 @@ const questionInputPhone = document.querySelector('.question__input--phone');
 const questionInputName = document.querySelector('.question__input--name');
 const modalInputPhone = document.querySelector('.modal__input--phone');
 const modalInputName = document.querySelector('.modal__input--name');
+const body = document.querySelector('.body');
 
 
 buttonSections.classList.remove('button--no-js');
@@ -45,8 +46,11 @@ if (mediaMobile.matches) {
       evt.preventDefault();
       if(footerSections){
         footerSections.classList.toggle('footer__list-sections--show');
+        footerOffice.classList.remove('footer__list-office--show');
+        buttonSections.classList.toggle('button--close');
+        buttonOffice.classList.remove('button--close');
       }
-      buttonSections.classList.toggle('button--close');
+
     });
   }
 })();
@@ -58,8 +62,11 @@ if (mediaMobile.matches) {
       evt.preventDefault();
       if(buttonOffice){
         footerOffice.classList.toggle('footer__list-office--show');
+        footerSections.classList.remove('footer__list-sections--show');
+        buttonOffice.classList.toggle('button--close');
+        buttonSections.classList.remove('button--close');
       }
-      buttonOffice.classList.toggle('button--close');
+
     });
   }
 })();
@@ -70,10 +77,20 @@ if (mediaMobile.matches) {
       evt.preventDefault();
       if(overlay){
         overlay.classList.toggle('overlay--hidden');
+        body.classList.add('body--modal');
+        $('input, textarea, a, button').each(function() {
+          $(this).attr('tabIndex', '-1');
+        });
+
+        $('#modal2 input, #modal2 textarea, #modal2 button').each(function() {
+          $(this).removeAttr('tabIndex');
+        });
+        setTimeout(() => { modalName.focus(); }, 500);
         if(buttonHeader){
           modal.classList.toggle('modal--show');
         }
       }
+
     });
   }
 })();
@@ -86,6 +103,10 @@ if (mediaMobile.matches) {
       if (overlayClose === overlay) {
         modal.classList.toggle('modal--show');
         overlay.classList.toggle('overlay--hidden');
+        body.classList.remove('body--modal');
+        $('input, textarea, a, button').each(function() {
+          $(this).removeAttr('tabIndex', '-1');
+        });
       }
 
     });
@@ -99,20 +120,29 @@ if (mediaMobile.matches) {
       if(modalClose){
         modal.classList.toggle('modal--show');
         overlay.classList.toggle('overlay--hidden');
+        body.classList.remove('body--modal');
+        $('input, textarea, a, button').each(function() {
+          $(this).removeAttr('tabIndex', '-1');
+        });
       }
     });
   }
 })();
 
 (function () {
-  document.addEventListener('keypress', (e) => {
-    if(e.key === 'Escape'){
-      modal.classList.toggle('modal--show');
-      overlay.classList.toggle('overlay--hidden');
+  document.addEventListener('keydown', (e) => {
+    if(modal.classList.contains('modal--show')) {
+      if(e.key === 'Escape'){
+        modal.classList.toggle('modal--show');
+        overlay.classList.toggle('overlay--hidden');
+        body.classList.remove('body--modal');
+        $('input, textarea, a, button').each(function() {
+          $(this).removeAttr('tabIndex', '-1');
+        });
+      }
     }
   });
 })();
-
 
 (function () {
   function validatePhone(inp){
