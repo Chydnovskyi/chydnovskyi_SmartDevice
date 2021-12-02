@@ -128,7 +128,7 @@
   background: rgba(255, 255, 255, 0.1);
   padding: 9px 0 14px 17px;
   box-sizing: border-box;
-  border-radius: 0;
+  -webkit-appearance: none;
 
   @media (max-width: $tablet-width) {
     width: 280px;
