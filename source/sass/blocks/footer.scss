@@ -9,7 +9,8 @@
 
 .footer__wrapper {
   display: flex;
-  padding: 65px 13.2% 42px;
+  padding: 65px 13.4% 42px 13.2%;
+  justify-content: space-between;
 
   @media (max-width: $tablet-width) {
     padding: 0;
@@ -74,7 +75,7 @@
 .footer__sections {
   display: flex;
   flex-direction: column;
-  margin-left: 14.6%;
+  margin-left: 11.6%;
 
   @media (max-width: $tablet-width) {
     padding-left: 24px;
@@ -149,8 +150,6 @@
 }
 
 .footer__office {
-  margin-left: auto;
-
   @media (max-width: $tablet-width) {
     margin-left: 0;
     padding: 38px 0 0 16px;
@@ -206,6 +205,14 @@
   &:hover {
     opacity: 1;
   }
+}
+
+.footer__list-office li {
+  white-space: nowrap;
+}
+
+.footer__list-office li:first-child {
+  white-space: normal;
 }
 
 .footer__paragraph {
@@ -313,6 +320,11 @@
   @media (max-width: $tablet-width) {
     grid-row: 3;
   }
+}
+
+.footer__list-sections li:nth-child(2n + 2) {
+  margin-right: 0;
+  width: 139px;
 }
 
 .footer__list-sections li:last-child {
