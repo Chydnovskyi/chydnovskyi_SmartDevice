@@ -114,14 +114,13 @@
 .footer__list-sections {
   min-height: 100px;
   display: flex;
-  flex-wrap: wrap;
   list-style: none;
   margin-top: 23px;
   padding: 0;
+  flex-flow: row wrap;
   max-width: 620px;
 
   @media (max-width: $tablet-width) {
-    display: grid;
     grid-template-columns: 1fr;
     min-height: 175px;
     height: auto;
@@ -151,18 +150,12 @@
 
 .footer__list-sections li {
   width: 50%;
-
-  @media (max-width: $tablet-width) {
-    width: 100%;
-  }
+  white-space: nowrap;
 }
+
 
 .footer__list-sections li:nth-child(2n + 1) {
   width: 38%;
-
-  @media (max-width: $tablet-width) {
-    width: 100%;
-  }
 }
 
 .footer__list-sections li:nth-child(1n + 1) {
