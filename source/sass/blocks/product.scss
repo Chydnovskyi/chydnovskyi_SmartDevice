@@ -57,10 +57,11 @@
 
 .product__list li {
   margin-right: 30px;
-  min-width: 370px;
+  width: 31.2%;
   margin-bottom: 46px;
 
   @media (max-width: $tablet-width) {
+    width: 100%;
     margin-right: 0;
   }
 

@@ -16,6 +16,7 @@
   height: 45px;
   border: 1px solid $white;
   box-sizing: border-box;
+  cursor: pointer;
 
   &:hover {
     background: $white;
@@ -116,6 +117,7 @@
   background: none;
   border: 1px solid $white;
   box-sizing: border-box;
+  cursor: pointer;
 
   &:hover {
     background: $white;
@@ -179,6 +181,7 @@
   border: 1px solid $white;
   box-sizing: border-box;
   margin-bottom: 26px;
+  cursor: pointer;
 
   &:hover {
     background: $white;

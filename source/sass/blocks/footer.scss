@@ -9,7 +9,9 @@
 
 .footer__wrapper {
   display: flex;
-  padding: 65px 13.4% 42px 13.2%;
+  padding: 65px 25px 42px;
+  margin: 0 auto;
+  max-width: 1409px;
   justify-content: space-between;
 
   @media (max-width: $tablet-width) {
