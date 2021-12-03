@@ -6,9 +6,9 @@
   box-sizing: border-box;
   width: 100%;
   align-items: center;
-  top: 43px;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,0%);
 
   @media (max-width: $tablet-width) {
     padding-top: 5px;
@@ -87,21 +87,9 @@
   }
 }
 
-// .header__list li {
-//   margin-right: 88px;
-
-//   @media (max-width: $tablet-width) {
-//     margin-right: 14px;
-//   }
-// }
-
-// .header__list li:last-child {
-//   margin-right: 49px;
-
-//   @media (max-width: $tablet-width) {
-//     margin-right: 0;
-//   }
-// }
+.header__list li:nth-child(n + 3) {
+  margin-top: 10px;
+}
 
 .header__list li a {
   text-decoration: none;
