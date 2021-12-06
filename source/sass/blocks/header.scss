@@ -5,7 +5,6 @@
   padding: 33px 25px 0;
   box-sizing: border-box;
   width: 100%;
-  align-items: center;
   top: 0;
   left: 50%;
   transform: translate(-50%,0%);
@@ -15,10 +14,9 @@
   }
 
   @media (max-width: $mobile-width) {
-    top: 33px;
     padding-left: 17px;
     padding-right: 16px;
-    padding-top: 8px;
+    padding-top: 17px;
   }
 }
 
@@ -58,11 +56,17 @@
 }
 
 .header__nav {
+  padding-top: 17px;
   margin-left: auto;
   margin-right: 50px;
 
   @media (max-width: $tablet-width) {
+    padding-top: 30px;
     margin-right: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 11px;
   }
 }
 

@@ -63,7 +63,7 @@
 
 .promo__image img {
   width: 100%;
-  height: 100%;
+  height: auto;
 
   @media (max-width: $tablet-width) {
     width: 260px;
